@@ -24,6 +24,10 @@ function TodoList() {
               }}
             />
             {todo.title}
+
+            {/* delete button for each item */}
+            <button onClick={() => setTodos(todos.filter(t => t.id !== todo.id))}>Delete</button>
+
           </li>
         ))}
       </ul>
